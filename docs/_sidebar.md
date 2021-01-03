@@ -1,7 +1,9 @@
 - [Домой](/README.md)
-
-  - [Строки](README.md)
-    - [Поиск подстроки в строке](search_substring.md)
+  - Алгоритмы
+    - [Строки](README.md)
+        - [Поиск подстроки в строке](search_substring.md)
+    - [Сортировка](sort/README.md)
+        - [Пузырьковая сортировка (bubble sort)](sort/README.md#Пузырьковая-сортировка-bubble-sort)
 
   - //TODO
       - Структуры
