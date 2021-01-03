@@ -1,5 +1,7 @@
 **[назад](sort)**
 
+# Пузырковая сортировка [Bubble sort]
+
 [filename](short/bubble_sort.md ':include')
 
 **принцип работы**:

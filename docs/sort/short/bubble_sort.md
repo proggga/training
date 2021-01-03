@@ -1,3 +1,5 @@
+При сортировке числа всплывают на свои места, поэтому пузырьковая
+
 [Вики (en) bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
 
 **основное**:
