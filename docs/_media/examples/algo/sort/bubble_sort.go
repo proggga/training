@@ -7,7 +7,7 @@ func main() {
 	fmt.Printf("%+v\n", bubbleSort(testArray))
 }
 
-### [bubble_sort]
+/// [bubble_sort]
 // сравниваем два соседних элемента и если один больше другого меняем местами
 // повторяем N-1 раз
 func bubbleSort(arr []int32) []int32 {
@@ -21,7 +21,7 @@ func bubbleSort(arr []int32) []int32 {
 	}
 	return arr
 }
-### [bubble_sort]
+/// [bubble_sort]
 
 func swap(arr []int32, from, to int) {
 	to_value := arr[to]
