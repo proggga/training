@@ -8,3 +8,7 @@
 ### [Пузырьковая сортировка (bubble sort)](sort/bubble_sort.md)
 
 [filename](sort/short/bubble_sort.md ':include')
+
+### [Cортировка вставками (insertion sort)](sort/insertion_sort.md)
+
+[filename](sort/short/insertion_sort.md ':include')

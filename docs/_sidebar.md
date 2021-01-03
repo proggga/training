@@ -4,6 +4,7 @@
         - [Поиск подстроки в строке](strings/search_substring.md)
     - [Сортировка](sort.md)
         - [Пузырьковая сортировка (bubble sort)](sort/bubble_sort.md)
+        - [Сортировка вставками (insertion sort)](sort/insertion_sort.md)
 
   - //TODO
       - Структуры
