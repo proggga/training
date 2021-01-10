@@ -5,22 +5,41 @@
     - [Сортировка](sort.md)
         - [Пузырьковая сортировка (bubble sort)](sort/bubble_sort.md)
         - [Сортировка вставками (insertion sort)](sort/insertion_sort.md)
-
+        - [Быстрая сортировка (quicksort)](sort/quicksort.md)
+        - [Сортировка слияниями (merge sort)](sort/merge_sort.md)
+        - [Сортировка кучей (heap sort)](sort/heap_sort.md)
+    - [Графы](graphs.md)
+        - [Поиск в глубину (Depth-first search / DFS)](graphs/DFS.md)
+        - [Поиск в ширину (Breadth-first search / BFS)](graphs/BFS.md)
+        - [Алгоритм Дейкстры (Dijkstra's algorithm)](graphs/dijkstra.md)
+        - [Алгоритм Беллмана - Форда (Bellman–Ford algorithm)](graphs/bellman_ford.md)
+        - [Алгоритм A* (A-star)](graphs/a_star.md)
+    - [остальное (medium)](https://medium.com/techie-delight/top-algorithms-data-structures-concepts-every-computer-science-student-should-know-e0549c67b4ac)
+        - Lee algorithm | Shortest path in a Maze
+        - Flood fill Algorithm
+        - Floyd’s Cycle Detection Algorithm
+        - Kadane’s algorithm
+        - Longest Increasing Subsequence
+        - [Обратная польская нотация](https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C)
   - //TODO
-      - Структуры
-    
-        - [Связные списки](README.md)
-        - [Стек](README.md)
-        - [Очередь](README.md)
-        - [Множества](README.md)
-        - [Граф](README.md)
-        - [Дерево](README.md)
-            - [Бинарное дерево](README.md)
-            - [Префиксное дерево](README.md)
-            - [Красно череное дерево](README.md)
-            - [B-дерево](README.md)
-        - [Двоичная куча / heap](README.md)
-        - [Хешмап](README.md)
+      - Структуры [(вики)](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82:%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)
+            
+        - [Связные списки (Lists / Linked lists)](README.md)
+        - [Массив (Array)](README.md)
+        - [Строки (Strings)](README.md)
+        - [Стек (Stack)](README.md)
+        - [Очередь (Queue)](README.md)
+        - [Дек (Deque)](README.md)
+        - [Множества (Set)](README.md)
+        - [Граф (Graph)](README.md)
+        - [Дерево (Tree)](README.md)
+            - [Бинарное дерево (Binary tree)](README.md)
+            - [Префиксное дерево (Prefix tree)](README.md)
+            - [Красно череное дерево (Red black tree)](README.md)
+            - [B-дерево (B Tree)](README.md)
+            - [Дерево отрезков (Segment tree)](https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE_%D0%BE%D1%82%D1%80%D0%B5%D0%B7%D0%BA%D0%BE%D0%B2)
+        - [Двоичная куча (heap)](README.md)
+        - [Хешмап (Hashmap/Hashtable)](README.md)
         - [Вероятностные структуры данных](README.md)
         - [lock-free структуры](README.md)
 
@@ -46,3 +65,5 @@
         - [MySQL](README.md)
         - [Redis](README.md)
         - [PgSQL](README.md)
+    
+    - [tasks](https://www.algoexpert.io/questions?r=ads&gclid=Cj0KCQiA6Or_BRC_ARIsAPzuer9uGarGHwAFnttKzD08eyK8k6G-bv9y-PnGDs-o07kcsLo_NWuFK_4aAttcEALw_wcB)
