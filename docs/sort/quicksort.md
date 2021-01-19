@@ -17,7 +17,7 @@
 Сложность данной быстрой сортировки падает до O(n2), когда массив уже отсортирован или все его элементы равны.
 Существуют различные методы оптимизации данной сортировки: алгоритмы выбора опорного элемента, использование сортировки вставками на маленьких массивах. В данном примере сортируются элементы массива A от low до high (включительно)
 
-![Gif from wiki Lomuto](https://cdn.emre.me/sorting/quick_sort_lomuto.gif ':size=250')
+![Gif Lomuto](../_media/img/sort/quicksort_lomuto.gif ':size=250')
 
 [filename](../_media/examples/sort/quicksort.go ':include :type=code :fragment=lomutoQuickSort')
 
@@ -34,7 +34,7 @@
 Сортировка с использованием данной схемы нестабильна.
 Следует заметить, что конечная позиция опорного элемента необязательно совпадает с возвращённым индексом.
 
-![Gif from wiki Hoare](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
+![Gif Hoare](../_media/img/sort/quicksort_hoare.gif)
 
 [filename](../_media/examples/sort/quicksort.go ':include :type=code :fragment=hoareQuickSort')
 

@@ -12,7 +12,7 @@
 
 запомнимаем число и передвигая влево, ищем нужное место
 
-![Gif from wiki](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
+![Gif](../_media/img/sort/insertion_sort.gif)
 
 #### пример реализации:
 

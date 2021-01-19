@@ -16,7 +16,7 @@
 далем так N-1 раз, т.к. в массиве N-1 пар
 по завершение N-1 цикла массив отсортирован
 
-![Gif algo example from wiki](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
+![Gif algo example](../_media/img/sort/bubble_sort.gif)
 
 #### пример реализации:
 
