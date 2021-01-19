@@ -4,15 +4,24 @@
 
 [filename](short/quicksort.md ':include')
 
+#### принцип работы:
+дробим на два массива и выбираем pivot (элемент из массива)
+сортируем так чтоб в первом массиве были все числа что меньше либо равны, в правом все что больше
+рекурсивно вызываем на эти два подмассива
+
 #### Пример реализации - разбиение Ломуто:
 
-Данный алгоритм разбиения был предложен Нико Ломуто[ и популяризован в книгах Бентли (Programming Pearls) и Кормена (Введение в алгоритмы).
+Данный алгоритм разбиения был предложен Нико Ломуто и популяризован в книгах Бентли (Programming Pearls) и Кормена (Введение в алгоритмы).
 В данном примере опорным выбирается последний элемент. Алгоритм хранит индекс в переменной i. Каждый раз, когда находится элемент, меньше или равный опорному, индекс увеличивается, и элемент вставляется перед опорным.
 Хоть эта схема разбиения проще и компактнее, чем схема Хоара, она менее эффективна и используется в обучающих материалах.
 Сложность данной быстрой сортировки падает до O(n2), когда массив уже отсортирован или все его элементы равны.
 Существуют различные методы оптимизации данной сортировки: алгоритмы выбора опорного элемента, использование сортировки вставками на маленьких массивах. В данном примере сортируются элементы массива A от low до high (включительно)
 
+![Gif from wiki Lomuto](https://cdn.emre.me/sorting/quick_sort_lomuto.gif ':size=250')
+
 [filename](../_media/examples/sort/quicksort.go ':include :type=code :fragment=lomutoQuickSort')
+
+[ссылка на весь файл](https://github.com/proggga/training/blob/master/docs/_media/examples/sort/quicksort.go)
 
 #### Пример реализации - разбиение Хоара:
 
@@ -25,6 +34,18 @@
 Сортировка с использованием данной схемы нестабильна.
 Следует заметить, что конечная позиция опорного элемента необязательно совпадает с возвращённым индексом.
 
+![Gif from wiki Hoare](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
+
 [filename](../_media/examples/sort/quicksort.go ':include :type=code :fragment=hoareQuickSort')
 
 [ссылка на весь файл](https://github.com/proggga/training/blob/master/docs/_media/examples/sort/quicksort.go)
+
+#### Пример реализации - разбиение Ломуто, но без рекурсии:
+
+чтоб победить stackoverflow есть вариант работы без рекурсии, индексы low и high помещают в [stack](structs/stack.md), и работаем в цикле наполняя и вытаскивая из стека, главное что без рекурсии
+
+[filename](../_media/examples/sort/quicksort.go ':include :type=code :fragment=iterativeLomutoQuickSort')
+
+[ссылка на весь файл](https://github.com/proggga/training/blob/master/docs/_media/examples/sort/quicksort.go)
+
+
