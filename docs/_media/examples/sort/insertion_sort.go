@@ -16,7 +16,8 @@ func insertionSort(n int, arr []int32) {
 		right := i
 		target := arr[i]
 
-		for right > 0 && arr[left] > target { // начинаем двигать влево, ищем нужное место
+		// начинаем двигать влево, ищем нужное место
+		for right > 0 && arr[left] > target {
 			arr[right] = arr[left]
 			left--
 			right--

@@ -1,6 +1,8 @@
 При сортировке числа вставляют на свои места, поэтому вставками
 
-[Вики (en) Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort)
+#### Вики
+- [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort)
+- [Сортировка вставками](https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0_%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%D0%BC%D0%B8)
 
 #### insertion_sort основное:
 - сильно проигрывает по производительности [quicksort](sort/quicksort.md), [heapsort](sort/heapsort.md), or [merge sort](sort/merge_sort.md) - сложность O(n^2) - n^2 - худший/средний случай и N при лучшем (отсортированном)
@@ -11,3 +13,4 @@
 - онлайн (online): может сортировать массив частично, прям в процессе получения данных
 - сортировка на месте (in-place): не требует доп памяти
 - адаптивный (adaptive): сложность сильно зависит от отсортированности, для более-менее отсортированных массивов будет работать быстрее
+- есть улучшенная версия алгоритма ([Сортировка Шелла](https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0_%D0%A8%D0%B5%D0%BB%D0%BB%D0%B0) | [Shell sort](https://en.wikipedia.org/wiki/Shellsort)) 

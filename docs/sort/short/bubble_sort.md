@@ -1,9 +1,12 @@
 При сортировке числа всплывают на свои места, поэтому пузырьковая
 
-[Вики (en) bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
+#### Вики
+- [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
+- [Пузырьковая сортировка](https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0_%D0%BF%D1%83%D0%B7%D1%8B%D1%80%D1%8C%D0%BA%D0%BE%D0%BC)
 
 #### bubble_sort основное:
 - не подходит для прода тк медленны (в основном используется только в образовательных целях)
 - алгоритм простой - немного кода
 - сортировка на месте (in-place): не требует доп памяти
 - стабильный (stable): не меняет порядок элементов, которые имеют одинаковые ключи
+- есть усовершенствованный вариант ([Сортировка расческой](https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0_%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%81%D0%BA%D0%BE%D0%B9) | [Comb sort](https://en.wikipedia.org/wiki/Comb_sort))

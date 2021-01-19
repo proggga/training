@@ -16,6 +16,6 @@
 
 #### пример реализации:
 
-[filename](../_media/examples/algo/sort/insertion_sort.go ':include :type=code :fragment=insertionSort')
+[filename](../_media/examples/sort/insertion_sort.go ':include :type=code :fragment=insertionSort')
 
-[ссылка на весь файл](https://github.com/proggga/training/blob/master/docs/_media/examples/algo/sort/insertion_sort.go)
+[ссылка на весь файл](https://github.com/proggga/training/blob/master/docs/_media/examples/sort/insertion_sort.go)

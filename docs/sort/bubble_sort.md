@@ -20,6 +20,6 @@
 
 #### пример реализации:
 
-[filename](../_media/examples/algo/sort/bubble_sort.go ':include :type=code :fragment=bubbleSort')
+[filename](../_media/examples/sort/bubble_sort.go ':include :type=code :fragment=bubbleSort')
 
-[ссылка на весь файл](https://github.com/proggga/training/blob/master/docs/_media/examples/algo/sort/bubble_sort.go)
+[ссылка на весь файл](https://github.com/proggga/training/blob/master/docs/_media/examples/sort/bubble_sort.go)
