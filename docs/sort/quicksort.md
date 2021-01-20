@@ -4,6 +4,12 @@
 
 [filename](short/quicksort.md ':include')
 
+#### сложность алгоритма:
+- Худший случай	O(n^2)
+- Лучший случай	O(n log n) (simple partition) и  O(n) (three-way partition and equal keys)
+- Средний случай O(n log n)
+- Худший случай по памяти O(n) auxiliary (naive) / O(log n) auxiliary (Hoare 1962)
+
 #### принцип работы:
 дробим на два массива и выбираем pivot (элемент из массива)
 сортируем так чтоб в первом массиве были все числа что меньше либо равны, в правом все что больше
