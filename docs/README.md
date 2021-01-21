@@ -1,15 +1,20 @@
 * Training
 
-Hello there!
+Hello there! / Привет всем
 
-Here we training for interviews
+Готовимся к интервью!
+Собираю информацию, изучаю вопросики и пишу тут.
+Надеюсь что все которую копну положить тут на память, чтоб упростить жизнь всем тем, кто с этим столкнется.
 
-So here I will collect all algo,
-that I can find, and try to solve interesting tasks,
-collect solutions and documentation.
+Планирую написать о:
+- алгоритмах
+- структурах
+- про линукс
+- про сети
+- общие теоретические моменты
 
-We have next dirs:
-- tasks : dir with tasks and solutions
-- examples : examples of realization of smth
-- docs : docs and info to remember 
+Спасибо за идею ребятам из
+https://backendinterview.ru/
+- Артур Пантелеев [@arturpanteleev](https://github.com/arturpanteleev) 
+- Сергей Пронин [@kefzce](https://github.com/kefzce)
 
