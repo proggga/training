@@ -4,6 +4,13 @@
     - let et code
     - hackerrank
     - interviewbit
+    - interviewing.io
+    - [[habr] Как я готовился к собеседованию в Google](https://habr.com/ru/company/skillfactory/blog/538536/)
+    - [[blog.interviewing.io] How do I know if I’m ready to interview at FAANG?](https://blog.interviewing.io/how-do-i-know-if-im-ready-to-interview-at-faang/)
+    - [system design](https://morioh.com/p/d92bef20b205)
+    - [[Курс] Grokking the System Design Interview ~55$](https://www.educative.io/courses/grokking-the-system-design-interview)
+    - [[youtube] Episode 06: Intro to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70)
+    - [[blog] System design book review](https://blog.pragmaticengineer.com/system-design-interview-an-insiders-guide-review/)
   - Алгоритмы
      - общее
          - метод ветвей и границ
