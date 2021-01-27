@@ -14,7 +14,7 @@ Hello there! / Привет всем
 - общие теоретические моменты
 
 Спасибо за идею ребятам из
-https://backendinterview.ru/
+https://backendinterview.ru/ ([github:arturpanteleev/phpInterview](https://github.com/arturpanteleev/phpInterview))
 - Артур Пантелеев [@arturpanteleev](https://github.com/arturpanteleev) 
 - Сергей Пронин [@kefzce](https://github.com/kefzce)
 

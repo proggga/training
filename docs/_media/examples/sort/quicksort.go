@@ -1,27 +1,67 @@
 // test it in https://play.golang.org/
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 var (
 	swaps_counter int
 )
 
+func makeTimestamp() int64 { // play.golang.org has constant time.Now(), check timing in terminal
+	return time.Now().UnixNano()
+}
+
 func main() {
-	swaps_counter = 0
-	testArray := []int32{1, 4, 2, 9, 8, 7, 3, 5, 6}
-	lomutoQuickSort(testArray, 0, len(testArray)-1)
-	fmt.Printf("%20s %+v - %d swaps\n", "lomuto", testArray, swaps_counter)
+	fmt.Printf("simple test\n")
 
-	swaps_counter = 0
-	testArray = []int32{1, 4, 2, 9, 8, 7, 3, 5, 6}
-	hoareQuickSort(testArray, 0, len(testArray)-1)
-	fmt.Printf("%20s %+v - %d swaps\n", "hoare", testArray, swaps_counter)
+	simpleTest := []int32{1, 4, 2, 9, 8, 7, 3, 5, 6, 10}
 
+	testSort(lomutoQuickSort, "lomuto", simpleTest)
+
+	testSort(hoareQuickSort, "hoare", simpleTest)
+
+	testSort(iterativeLomutoQuickSort, "iter_lomuto", simpleTest)
+
+	testSort(quicksort3way, "3-way sort", simpleTest)
+
+	fmt.Printf("hard test\n")
+
+	hardTest := []int32{1, 4, 2, 4, 9, 8, 4, 7, 4, 4, 3, 5, 6, 10}
+
+	testSort(lomutoQuickSort, "lomuto", hardTest)
+
+	testSort(hoareQuickSort, "hoare", hardTest)
+
+	testSort(iterativeLomutoQuickSort, "iter_lomuto", hardTest)
+
+	testSort(quicksort3way, "3-way sort", hardTest)
+
+	fmt.Printf("sorted test\n")
+
+	sortedTest := []int32{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+	testSort(lomutoQuickSort, "lomuto", sortedTest)
+
+	testSort(hoareQuickSort, "hoare", sortedTest)
+
+	testSort(iterativeLomutoQuickSort, "iter_lomuto", sortedTest)
+
+	testSort(quicksort3way, "3-way sort", sortedTest)
+
+}
+
+func testSort(callback func(arr []int32, from, to int), methodName string, testArrayOriginal []int32) {
 	swaps_counter = 0
-	testArray = []int32{1, 4, 2, 9, 8, 7, 3, 5, 6}
-	iterativeLomutoQuickSort(testArray, 0, len(testArray)-1)
-	fmt.Printf("%20s %+v - %d swaps\n", "iterative lomuto", testArray, swaps_counter)
+	testArray := make([]int32, len(testArrayOriginal))
+	copy(testArray, testArrayOriginal)
+	start := makeTimestamp()
+	callback(testArray, 0, len(testArray)-1)
+	t := makeTimestamp()
+	elapsed := t - start
+	fmt.Printf("%20s %+v - %d swaps time %d %d %d\n", methodName, testArray, swaps_counter, elapsed, t, start)
 }
 
 /// [lomutoQuickSort]
@@ -61,20 +101,20 @@ func hoareQuickSort(arr []int32, from, to int) {
 
 func hoarePartition(arr []int32, low, high int) int {
 	pivot := (arr[low] + arr[high]) / 2
-	i := low
-	j := high
+	i := low - 1
+	j := high + 1
 	for {
 
 		// двигаем левый курсор вправо пока не найдем значение,
 		// которое нужно свапнуть в правую часть
-		for arr[i] < pivot {
-			i++
+		i++
+		for ; arr[i] < pivot; i++ {
 		}
 
 		// двигаем правый курсор влево пока не найдем значение,
 		// которое нужно свапнуть в левую часть
-		for arr[j] > pivot {
-			j--
+		j--
+		for ; arr[j] > pivot; j-- {
 		}
 
 		// курсоры сошлись, выходим - больше делать нечего
@@ -154,6 +194,86 @@ func iterativeLomutoPartition(arr []int32, low, high int) int {
 }
 
 /// [iterativeLomutoQuickSort]
+
+// 3-way partition based quick sort
+func quicksort3way(a []int32, l, r int) {
+	if r <= l {
+		return
+	}
+
+	i, j := partition3way(a, l, r)
+
+	// Recursive
+	quicksort3way(a, l, j)
+	quicksort3way(a, i, r)
+}
+
+func partition3way(a []int32, l, r int) (i, j int) {
+	i = l - 1
+	j = r
+	p := l - 1
+	q := r
+	v := a[r]
+
+	for {
+		// From left, find the first element greater than
+		// or equal to v. This loop will definitely
+		// terminate as v is last element
+		i++
+		for ; a[i] < v; i++ {
+		}
+
+		// From right, find the first element smaller than
+		// or equal to v
+		j--
+		for ; v < a[j]; j-- {
+			if j == l {
+				break
+			}
+		}
+
+		// If i and j cross, then we are done
+		if i >= j {
+			break
+		}
+
+		// Swap, so that smaller goes on left greater goes
+		// on right
+		swap(a, i, j)
+
+		// Move all same left occurrence of pivot to
+		// beginning of array and keep count using p
+		if a[i] == v {
+			p++
+			swap(a, p, i)
+		}
+
+		// Move all same right occurrence of pivot to end of
+		// array and keep count using q
+		if a[j] == v {
+			q--
+			swap(a, j, q)
+		}
+	}
+
+	// Move pivot element to its correct index
+	swap(a, i, r)
+
+	// Move all left same occurrences from beginning
+	// to adjacent to arr[i]
+	j = i - 1
+	for k := l; k < p; k, j = k+1, j-1 {
+		swap(a, k, j)
+	}
+
+	// Move all right same occurrences from end
+	// to adjacent to arr[i]
+	i = i + 1
+	for k := r - 1; k > q; k, i = k-1, i+1 {
+		swap(a, i, k)
+	}
+	return i, j
+}
 
 func swap(arr []int32, from, to int) {
 	tmp := arr[to]

@@ -1,5 +1,14 @@
 - [Домой](/README.md)
+  - доп ресурсы
+    - pramp
+    - let et code
+    - hackerrank
+    - interviewbit
   - Алгоритмы
+     - общее
+         - метод ветвей и границ
+         
+    - доп советы
     - [Строки](strings.md)
         - [Поиск подстроки в строке](strings/search_substring.md)
     - [Сортировка](sort.md)
@@ -10,13 +19,25 @@
         - [Пирамидальная сортировка / Сортировка кучей (heapsort)](sort/heap_sort.md)
         - [Интроспективная сортировка (Introsort)](sort/introsort.md)
         - [Timsort](sort/timsort.md)
+        - burstsort
+        - count sort
+        - Multi-key quicksort
+        - dual pivot quicksort
+        - american flag sort tree
+        - radix sort
+        - block merge sort
     - [Графы](graphs.md)
+        - Prim, Kruskal, Dijkstra
         - [Поиск в глубину (Depth-first search / DFS)](graphs/DFS.md)
         - [Поиск в ширину (Breadth-first search / BFS)](graphs/BFS.md)
         - [Алгоритм Дейкстры (Dijkstra's algorithm)](graphs/dijkstra.md)
         - [Алгоритм Беллмана - Форда (Bellman–Ford algorithm)](graphs/bellman_ford.md)
         - [Алгоритм A* (A-star)](graphs/a_star.md)
     - [остальное (medium)](https://medium.com/techie-delight/top-algorithms-data-structures-concepts-every-computer-science-student-should-know-e0549c67b4ac)
+        - Network connectivity / union-find
+        - eager approach, lazy approach
+        - задача рюкзака
+        - задача коммивояжера
         - Lee algorithm | Shortest path in a Maze
         - Flood fill Algorithm
         - Floyd’s Cycle Detection Algorithm
@@ -24,8 +45,15 @@
         - Longest Increasing Subsequence
         - [Обратная польская нотация](https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C)
   - //TODO
+      - strings radix sorts, trie, KMP, regexps, data compression
+      - advanced B-tree, suffix array, maxflow
       - Структуры [(вики)](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82:%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)
-            
+        - union-find
+        - trie
+        - bag
+        - priority queue
+        - ternary search tree
+        - trie
         - [Связные списки (Lists / Linked lists)](README.md)
         - [Массив (Array)](README.md)
         - [Строки (Strings)](README.md)
