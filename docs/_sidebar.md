@@ -51,11 +51,15 @@
         - Kadane’s algorithm
         - Longest Increasing Subsequence
         - [Обратная польская нотация](https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C)
-  - //TODO
-      - strings radix sorts, trie, KMP, regexps, data compression
+    - //TODO
+      - strings radix sorts, trie, regexps, data compression
+      - [кнута-морриса-прата](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
+      - префикс-функцию и z-функцию
       - advanced B-tree, suffix array, maxflow
+      - умение писать и применять динамику
       - Структуры [(вики)](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82:%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)
         - union-find
+        - биноминальная куча
         - trie
         - bag
         - priority queue
@@ -103,4 +107,5 @@
         - [Redis](README.md)
         - [PgSQL](README.md)
     
+    - https://algs4.cs.princeton.edu/23quicksort/
     - [tasks](https://www.algoexpert.io/questions?r=ads&gclid=Cj0KCQiA6Or_BRC_ARIsAPzuer9uGarGHwAFnttKzD08eyK8k6G-bv9y-PnGDs-o07kcsLo_NWuFK_4aAttcEALw_wcB)
