@@ -20,8 +20,3 @@
 - [system design](https://morioh.com/p/d92bef20b205)
 - [[youtube] Episode 06: Intro to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70)
 - [[blog] System design book review](https://blog.pragmaticengineer.com/system-design-interview-an-insiders-guide-review/)
-
-
-## Random staff
-- [задачки на позицию го разраба](tasks/go_prepare.md)
-- [задачка на принципал в силиконовую]()

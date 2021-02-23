@@ -1,5 +1,8 @@
 - [Домой](/README.md)
   - [внешние ресурсы](extra_info.md)
+  - random_staff
+    - [задачки на позицию го разраба](tasks/go_prepare.md)
+    - [задачка на принципал в силиконовую](tasks/silicon_principal.md)
   - Алгоритмы
      - общее
          - метод ветвей и границ
