@@ -1,21 +1,9 @@
 - [Домой](/README.md)
-  - доп ресурсы
-    - pramp
-    - let et code
-    - hackerrank
-    - interviewbit
-    - interviewing.io
-    - [[habr] Как я готовился к собеседованию в Google](https://habr.com/ru/company/skillfactory/blog/538536/)
-    - [[blog.interviewing.io] How do I know if I’m ready to interview at FAANG?](https://blog.interviewing.io/how-do-i-know-if-im-ready-to-interview-at-faang/)
-    - [system design](https://morioh.com/p/d92bef20b205)
-    - [[Курс] Grokking the System Design Interview ~55$](https://www.educative.io/courses/grokking-the-system-design-interview)
-    - [[youtube] Episode 06: Intro to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70)
-    - [[blog] System design book review](https://blog.pragmaticengineer.com/system-design-interview-an-insiders-guide-review/)
+  - [внешние ресурсы](extra_info.md)
   - Алгоритмы
      - общее
          - метод ветвей и границ
-         
-    - доп советы
+         - алгоритм укконена
     - [Строки](strings.md)
         - [Поиск подстроки в строке](strings/search_substring.md)
     - [Сортировка](sort.md)
@@ -35,6 +23,7 @@
         - block merge sort
     - [Графы](graphs.md)
         - Prim, Kruskal, Dijkstra
+        - алгоритм укконена
         - [Поиск в глубину (Depth-first search / DFS)](graphs/DFS.md)
         - [Поиск в ширину (Breadth-first search / BFS)](graphs/BFS.md)
         - [Алгоритм Дейкстры (Dijkstra's algorithm)](graphs/dijkstra.md)
@@ -50,6 +39,17 @@
         - Floyd’s Cycle Detection Algorithm
         - Kadane’s algorithm
         - Longest Increasing Subsequence
+        - customers in a line
+        - colliding particles
+        - reducing roundoff error
+        - Huffman codes
+        - Dijkstra's algorithm, Prim's algorithm
+        - sum of powers
+        - A* search
+        - maintain largest M values in a sequence
+        - load balancing, interrupt handling
+        - bin packing, scheduling
+        - Bayesian spam filter
         - [Обратная польская нотация](https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C)
     - //TODO
       - strings radix sorts, trie, regexps, data compression
@@ -59,11 +59,14 @@
       - умение писать и применять динамику
       - Структуры [(вики)](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82:%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)
         - union-find
+        - suffix-trie
+        - Suffix automaton
         - биноминальная куча
         - trie
         - bag
         - priority queue
         - ternary search tree
+        - R-дерево
         - trie
         - [Связные списки (Lists / Linked lists)](README.md)
         - [Массив (Array)](README.md)

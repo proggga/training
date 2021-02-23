@@ -31,7 +31,7 @@ func main() {
 	hp.pop()
 	hp.pop()
 	fmt.Printf("%+v\n", hp)
-	sm := []int32{1,6,2,3,5,67,7,23,4,9}
+	sm := []int32{1, 6, 2, 3, 5, 67, 7, 23, 4, 9}
 	hp.setNewHeap(sm)
 	hp.pop()
 	hp.pop()
@@ -58,12 +58,13 @@ func (h *heap) add(value int32) {
 }
 
 func (h *heap) heapify(index int) {
-	if index > 0 {
+	for index > 0 {
 		parent := h.getParent(index)
-		if h.storage[parent] > h.storage[index] {
-			h.swap(parent, index)
-			h.heapify(parent)
+		if h.storage[parent] <= h.storage[index] {
+			break
 		}
+		h.swap(parent, index)
+		index = parent
 	}
 }
 
@@ -101,21 +102,25 @@ func (h *heap) pop() int32 {
 	return value
 }
 
+// функция чинит
 func (h *heap) minHeapify(index int) {
-	left_i := h.getLeftChild(index)
-	right_i := h.getRightChild(index)
-
-
 	smallest := index
-	if left_i <= h.cursor &&  h.storage[left_i] < h.storage[index] {
-		smallest = left_i
-	}
-	if right_i <= h.cursor && h.storage[right_i] < h.storage[smallest] {
-		smallest = right_i
-	}
-	if smallest != index {
-		h.swap(smallest, index)
-		h.minHeapify(smallest)
+	w_index := index
+	for {
+		left_i := h.getLeftChild(w_index)
+		right_i := h.getRightChild(w_index)
+
+		if left_i <= h.cursor && h.storage[left_i] < h.storage[w_index] {
+			smallest = left_i
+		}
+		if right_i <= h.cursor && h.storage[right_i] < h.storage[smallest] {
+			smallest = right_i
+		}
+		if smallest == w_index { // нечего делать, тк уже наименьший элемент уже на месте
+			break
+		}
+		h.swap(smallest, w_index)
+		w_index = smallest
 	}
 }
 
