@@ -9,9 +9,15 @@
 - [leetcode](https://leetcode.com/) - куча топ задачек для тренинга интервью
 - [hackerrank](https://hackerrank.com) - тоже куча задачек для тренинга интервью
 - [канал тг FAANG Interview](https://t.me/FaangInterview) - 5к людей обсуждают как попасть в faang, проводят мок интервью, могут глянуть резюме - мегатоп
+- [блог Виктора Карпова](https://vitkarpov.me/posts/) - оч крутой блог от инженера из Амазона/Яндекса
+- [github: system-design](https://github.com/donnemartin/system-design-primer) - репа по систем дизайн
+- [github: google-interview](https://github.com/Ilyushin/google-interview-university) - репа чеклист, форкаешь и ставишь галочки
+- [Interview prep guide](https://paper.dropbox.com/doc/Interview-Preparation-Guide-PHeQLxMXugqC1vz72wgtX) - гайд список ссылок
+- [Nginx microservices](https://www.nginx.com/blog/introduction-to-microservices)
 
 ### Платные
 - [interviewing.io](https://interviewing.io/) - мок интервью с крутыми разрабами из faang
+- [YouTube interviewing.io](https://www.youtube.com/c/interviewingio/videos?view=0&sort=dd&shelf_id=1) - у них класные видео с примерами мок интервью
 - [[Курс] Grokking the System Design Interview ~55$](https://www.educative.io/courses/grokking-the-system-design-interview)
 
 ## Статьи

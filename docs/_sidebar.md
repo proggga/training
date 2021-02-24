@@ -1,10 +1,12 @@
 - [Домой](/README.md)
   - [внешние ресурсы](extra_info.md)
-  - random_staff
+  - tasks
     - [задачки на позицию го разраба](tasks/go_prepare.md)
     - [задачка на принципал в силиконовую](tasks/silicon_principal.md)
+    - [google sample tasks](tasks/sample_questions_google.md)
   - Алгоритмы
      - общее
+         - [big o notation cheatlist](https://www.bigocheatsheet.com/)
          - метод ветвей и границ
          - алгоритм укконена
     - [Строки](strings.md)
@@ -53,6 +55,9 @@
         - load balancing, interrupt handling
         - bin packing, scheduling
         - Bayesian spam filter
+        - Shortest Path
+        - Traveling Salesman
+        - Knapsack
         - [Обратная польская нотация](https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C)
     - //TODO
       - strings radix sorts, trie, regexps, data compression
@@ -64,7 +69,8 @@
         - union-find
         - suffix-trie
         - Suffix automaton
-        - биноминальная куча
+        - Fenwick_tree
+        - 2–3 tree
         - trie
         - bag
         - priority queue
