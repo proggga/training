@@ -28,6 +28,15 @@
         - block merge sort
     - [Графы](graphs.md)
         - Prim, Kruskal, Dijkstra
+        - Dijkstra’s,
+        - Floyd-Warshall
+        - Traveling Salesman
+        - A*
+        - bloom filter
+        - breadth-first iterative search
+        - k-way merge
+        - bucket/radix sort
+        - closest pair
         - алгоритм укконена
         - [Поиск в глубину (Depth-first search / DFS)](graphs/DFS.md)
         - [Поиск в ширину (Breadth-first search / BFS)](graphs/BFS.md)
